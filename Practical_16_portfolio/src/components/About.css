@@ -1,0 +1,374 @@
+.about {
+    background: #1e2028;
+    position: relative;
+    padding: 80px 0;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.about-header {
+    margin-bottom: 3rem;
+}
+
+.about-header .section-title {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.about-subtitle {
+    color: #abb2bf;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-bottom: 4rem;
+}
+
+.about-content {
+    max-width: 500px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #abb2bf;
+    margin-bottom: 1.5rem;
+}
+
+.about-content p:first-child {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-visual {
+    position: relative;
+    width: 350px;
+    height: 400px;
+}
+
+.about-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-shape {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.shape-1 {
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 30px;
+    height: 15px;
+    top: 80px;
+    right: 80px;
+    border-radius: 4px;
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+.shape-3 {
+    width: 25px;
+    height: 25px;
+    bottom: 150px;
+    left: 30px;
+    animation: float 7s ease-in-out infinite;
+}
+
+.shape-4 {
+    width: 40px;
+    height: 20px;
+    bottom: 100px;
+    right: 60px;
+    border-radius: 8px;
+    animation: float 9s ease-in-out infinite reverse;
+}
+
+.shape-5 {
+    width: 15px;
+    height: 15px;
+    top: 120px;
+    left: 80px;
+    border-radius: 50%;
+    animation: float 5s ease-in-out infinite;
+}
+
+.shape-6 {
+    width: 35px;
+    height: 35px;
+    bottom: 50px;
+    left: 100px;
+    animation: float 10s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(3deg);
+    }
+}
+
+.about-illustration {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 250px;
+    background: #282c34;
+    border: 1px solid #3e4451;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.person-silhouette {
+    width: 120px;
+    height: 180px;
+    background: linear-gradient(135deg, #1e2028 0%, #2c313c 100%);
+    border-radius: 60px 60px 0 0;
+    position: relative;
+}
+
+.person-silhouette::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: #1e2028;
+    border-radius: 50%;
+}
+
+.person-silhouette::after {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    right: -20px;
+    width: 60px;
+    height: 80px;
+    background: #c778dd;
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+
+
+/* Academic & Leadership Section */
+.academic-section {
+    margin-bottom: 4rem;
+}
+
+.academic-title {
+    color: #c778dd;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-family: var(--font-mono);
+}
+
+.academic-content {
+    max-width: 800px;
+}
+
+.academic-item {
+    color: #abb2bf;
+    font-size: 1rem;
+    font-family: var(--font-mono);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.academic-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Fun Facts Section */
+.fun-facts-section {
+    margin-bottom: 2rem;
+}
+
+.fun-facts-title {
+    color: #c778dd;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-family: var(--font-mono);
+}
+
+.fun-facts-layout {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4rem;
+    align-items: start;
+}
+
+.fun-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.fun-fact-item {
+    background: #282c34;
+    border: 1px solid #3e4451;
+    border-radius: 4px;
+    padding: 1rem;
+    color: #abb2bf;
+    font-size: 0.9rem;
+    font-family: var(--font-mono);
+    transition: all 0.3s ease;
+}
+
+.fun-fact-item:hover {
+    border-color: #c778dd;
+    transform: translateY(-2px);
+}
+
+.fun-facts-visual {
+    position: relative;
+    width: 150px;
+    height: 200px;
+}
+
+.fun-facts-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fun-shape {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.fun-shape.shape-1 {
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 20px;
+    border-radius: 8px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.fun-shape.shape-2 {
+    width: 30px;
+    height: 30px;
+    top: 80px;
+    right: 20px;
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+.fun-shape.shape-3 {
+    width: 50px;
+    height: 25px;
+    bottom: 60px;
+    left: 10px;
+    border-radius: 4px;
+    animation: float 7s ease-in-out infinite;
+}
+
+.fun-shape.shape-4 {
+    width: 25px;
+    height: 25px;
+    bottom: 20px;
+    right: 30px;
+    animation: float 9s ease-in-out infinite reverse;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 0;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-visual {
+        width: 300px;
+        height: 350px;
+    }
+
+    .about-illustration {
+        width: 180px;
+        height: 220px;
+    }
+
+    .person-silhouette {
+        width: 100px;
+        height: 160px;
+    }
+
+
+
+
+
+    .fun-facts-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .fun-facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fun-facts-visual {
+        width: 100%;
+        height: 150px;
+        margin: 0 auto;
+    }
+}
